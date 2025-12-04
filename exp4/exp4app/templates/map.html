@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>CHROMPET MAP</title>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+        body {
+            overflow: hidden;
+            font-family: Arial;
+        } 
+    </style>
+</head>
+<body>
+    <h1>CHROMPET CITY MAP</h1>
+    <h2>Lothika M (25006771)</h2>
+
+    <img src="../static/chromepet.png" alt="Chrompet" usemap="#image-map">
+
+    <map name="image-map">
+
+        <area shape="rect" coords="568,115,682,165" href="{% url 'copperkitchen' %}" title="copperkitchen">
+
+        <area shape="rect" coords="430,438,500,500" href="{% url 'hotelgrandpalace' %}" title="hotelgrandpalace">
+
+        <area shape="rect" coords="308,480,420,680" href="{% url 'nandhanapalace' %}" title="nandhanapalace">
+
+        <area shape="rect" coords="358,480,620,680" href="{% url 'temple' %}" title="temple">
+
+        <area shape="rect" coords="620,360,810,420" href="{% url 'chromepet' %}" title="chromepet">
+    </map>
+
+</body>
+</html>
